@@ -1,0 +1,24 @@
+1. XY plot for papers with one axis as features and one axis as type of papers
+
+2. Gigyasawireless can be used for running end-to-end 5G simulation for algorithm verification rather than directly implementing it on testbed
+
+3. Go into more depth on what algorithms to be used for the work - we can use existing algorithms, but brainstorm on which one and why that one
+
+Contributions of the paper - 
+1. Sub6 ISAC system and 5G compliant
+
+2. Live processing using an xApp coupled with 5G protocol stack
+
+3. Algorithm improvement - using existing algorithms adjusted for 5G
+
+4. Real experimental testbed
+
+
+Idea for algorithm - 
+1. Can we model the channel using Compressive sensing with received signal as a combination of sparse basis signals?
+	- Solve using OMP
+	
+2. Variation of CSI amplitude and phase in static and dynamic environments
+	- Analyze this for our scenario
+
+3. 

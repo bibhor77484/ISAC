@@ -1,0 +1,53 @@
+1. MULTI-SCOUT: Multistatic Integrated Sensing and Communications in 5G and Beyond for Moving Target Detection, Positioning, and Tracking
+	
+	System model - 
+	- One transmitter and M single antenna receivers are used to track scatterers
+	- Delay and Doppler estimated by all M receivers are used for position and velocity estimation for the object(s)
+	- Downlink PRS signal is used for this
+	
+	Signal model -
+	- SCS = 15 KHz, f_c = 2.4 GHz, BW = 76 RBs, N = 1024, K_comb = 2
+	- DL PRS signal is used which is generated from a length-31 Gold-family sequence
+	- 2 symbols per slot with 128 PRS OFDM symbols in total
+	
+	Parameter estimation -
+	- CAF (Cross-Ambiguity function) is used to estimate the delay and Doppler (This function is also used for coarse delay and Doppler estimation in GPS)
+	- LoS delay is removed from the received signal and reflected delay is computed after the removal 
+	- The delays from all antennas are used to solve an optimization problem created using the path length computed from delay and analytical expression of the path length
+	- Trust-Region Reflective (TRF) nonlinear least-squares solver is used to solve for the position of the scatterer with random initializations to avoid local minima
+	- After estimating the position, another least square problem created using Doppler estimates is solved for the 2D velocity of the object using Ridge rigression 
+	
+	Performance evaluation - 
+	- For evaluation, simulations results are used with 3 receivers at the corners of an equilateral triangle
+	- They also provided analysis for 3D position and velocity estimations
+	- They also provided analysis for multi-object tracking. When we have that, we have to map the delay/Doppler estimates to the correct objects as well. They proposed that the correct object to measurement mapping can also be estimated while minimizing the objective function created using delay. They will solve the same problem for all possible combinations of object-delay mapping and whichever gives the most optimal residual value of the objective function is the correct mapping.
+	
+	Kalman filter tracking - 
+	- Using the position and velocity, they create a state space model in Kalman filter and perform tracking using a linear Kalman filter
+	
+	
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	
+	
+2. MIMO-RIC: RAN Intelligent Controller for MIMO xApps
+
+	MIMO Nulling Matrix Calculation for Jammer Mitigation - 
+	- The system model includes a BS with an attached UE and a jammer
+	- Channel estimates are provided by PUSCH estimator likely using DMRS signals as the reference signals
+	- The assumption is that the BS is able to estimate the channel of the UE with and without the jammer. Say, the channel without the jammer is h_u and the channel with the jammer is h_t
+	- The channel of the jammer is then estimated as h_j = h_t - h_u
+	- The combiner (h) is then designed to maximize h^H*h_u and minimize h^H*h_j. This process is done for all the available subcarriers to account for the frequency selectivity.
+	- Shortcoming of the method is that it won't work without the information of UE channel with and without the jammer. 
+	
+
+	Angular localization - 
+	- System model includes a BS with attached UEs (one at a time at angles 10 and -20 degrees azimuth)
+	- Beam pattern is plotted using the estimated channel from PUSCH estimator
+	- The angle at which the beam pattern is the strongest is the estimated angle for the UE
+	- Shortcoming of the method is that this is a brute force method of searching through the entire beamspace for the strongest beam. The accuracy of the method will depend on the least count of the search.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+3. VersaBeam: Versatile Beamforming for Integrated Sensing and Communication over Commodity Wi-Fi
+	
+	This paper proposes VersaBeam, a practical ISAC system actively leveraging beamforming to simultaneously achieve high-performance communication and sensing in commodity Wi-Fi. Instead of attempting to mitigate beamforming’s negative impact on sensing, VersaBeam boasts a novel beamforming design to balance the demands of both sensing and communication. Additionally, it proposes a user selection strategy to determine the sources for packet reuse and introduce a method to unify CSI measured from different users’ packets, accommodating variations in beamforming direction.
