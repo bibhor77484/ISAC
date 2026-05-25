@@ -21,4 +21,17 @@ Idea for algorithm -
 2. Variation of CSI amplitude and phase in static and dynamic environments
 	- Analyze this for our scenario
 
-3. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+More ideas - 
+
+1. If the cellular ISAC system works, we can extend the work with multi-UE systems for better accuracy and more context.
+
+2. A novel sensing aware scheduler - This will require us to first fuse Sionna ray tracing with OAI (I can do this during the internship)
+
+3. Dr. Ish suggested ideas for later papers -
+	a. K-means clustering for tracking paths
+	b. Improved multi-stage mDTrack using acquired info from static environment 
+		- Stage 1: Better estimation of the static path parameters when there is no dynamic object
+		- Stage 2: When any dynamic object comes into the picture, we use the already well-estimated static path parameters to do mDTrack instead of estimating all the paths for the first time
+	c. Using the change in phase across time due to change in object position (j*2*pi*f_c*tau) to track the ToF instead of re-estimating it every time 
