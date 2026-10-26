@@ -1,0 +1,86 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="itu-radio-material" id="mat-metal">
+        <string name="type" value="metal"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-concrete">
+        <string name="type" value="concrete"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-ceiling_board">
+        <string name="type" value="ceiling_board"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-wood">
+        <string name="type" value="wood"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-plasterboard">
+        <string name="type" value="plasterboard"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-glass">
+        <string name="type" value="glass"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-plywood">
+        <string name="type" value="plywood"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-medium_dry_ground">
+        <string name="type" value="medium_dry_ground"/>
+	</bsdf>
+	<bsdf type="itu-radio-material" id="mat-brick">
+        <string name="type" value="brick"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__2" name="elm__2">
+		<string name="filename" value="meshes/Plane.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-medium_dry_ground" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__4" name="elm__4">
+		<string name="filename" value="meshes/Cube.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-plywood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__6" name="elm__6">
+		<string name="filename" value="meshes/map_osm_buildings-concrete.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__7" name="elm__7">
+		<string name="filename" value="meshes/map_osm_buildings-concrete-001.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__9" name="elm__9">
+		<string name="filename" value="meshes/map_osm_paths_footway.ply"/>
+		<ref id="mat-brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__10" name="elm__10">
+		<string name="filename" value="meshes/map_osm_roads_pedestrian.ply"/>
+		<ref id="mat-brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__11" name="elm__11">
+		<string name="filename" value="meshes/map_osm_roads_unclassified.ply"/>
+		<ref id="mat-concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__12" name="elm__12">
+		<string name="filename" value="meshes/map_osm_roads_service.ply"/>
+		<ref id="mat-brick" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

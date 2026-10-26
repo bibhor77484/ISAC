@@ -1,0 +1,39 @@
+N_loop = 50 (Monte Carlo iteration)
+
+Indoor - 
+
+Total detection = 4350
+True detection = 3701
+False detection = 637
+Ground truth = 4950.0
+RMSE = 1.9887802098740375 meters
+mean = 1.69 meters
+SD = 1.03 meters
+P_d = 0.75
+P_fa = 0.15
+
+
+Outdoor - 
+
+Total detection = 5106
+True detection = 4239
+False detection = 853
+Ground truth = 4450.0
+RMSE = 0.9704577421269982 meters
+mean = 0.66 meters
+SD = 0.71 meters
+P_d = 0.95
+P_fa = 0.17
+
+
+Open - 
+
+Total detection = 4320
+True detection = 4250
+False detection = 9
+Ground truth = 4250.0
+RMSE = 0.7154380975655019 meters
+mean = 0.56 meters
+SD = 0.44 meters
+P_d = 1
+P_fa = 0

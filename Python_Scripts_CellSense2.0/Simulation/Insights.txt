@@ -1,0 +1,9 @@
+1. After using Kalman filter on top of CellSense (MILCOM) -
+	a. Outdoor and Open environments see a decent improvement in RMSE (20-30 cm) with estimated trajectory starting to follow the ground truth trajectory
+	b. For Indoor environment, there is no visible improvement in RMSE with estimated trajectory not following the GT trajectory. The likely reason is that the starting point of KF (first estimate) in Indoor environments is quite far from the GT because of large amount of static clutter.
+	
+2. Doppler estimation: There are 3 metrics that we need to consider when performing Doppler estimation. They are -
+	a. Resolution: This is the minimum difference between the Doppler of two paths so that they can be distinguished even if their range is equal in a SISO system. It is the inverse of the total observation time used to estimate the Doppler.
+	b. Cramer Rao Bound: This is the minimum possible error variance of the Doppler estimate. It is inversely proportional to the square of the total observation time.
+	c. Doppler ambiguity: Because Doppler is estimated using signal phase in time domain and phase wraps over after every 2*pi interval, this causes Doppler ambiguity, i.e., multiple different Doppler values can provide us the peak in the correlation operation. Larger observation time may result in smaller unambiguous Doppler range and therefore, larger Doppler ambiguity. 
+	For example - If we are using 2 samples for Doppler estimation and they are apart by 'T_obs' time, the Doppler values that can be unambiguously estimated from this setup is [-1/(2*T_obs), 1/(2*T_obs)]. Therefore, larger observation time results in larger Doppler ambiguity.

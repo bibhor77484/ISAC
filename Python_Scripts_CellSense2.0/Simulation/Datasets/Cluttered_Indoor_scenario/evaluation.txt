@@ -1,0 +1,205 @@
+1. Location_1 => [2, 2, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 50
+
+True detection = 34
+
+False detection = 11
+
+Ground truth = 69
+
+RMSE = 1.45 meters
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+2. Location_2 => [2, 0.5, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 11
+
+True detection = 5
+
+False detection = 5
+
+Ground truth = 69
+
+RMSE = NA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+3. Location_3 => [2, -0.5, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 25
+
+True detection = 17
+
+False detection = 8
+
+Ground truth = 69
+
+RMSE = 0.11 meters
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+4. Location_4 => [2, -1.5, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 14
+
+True detection = 0
+
+False detection = 14
+
+Ground truth = 69
+
+RMSE = NA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+5. Location_5 => [-1.5, 2, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 49
+
+True detection = 41
+
+False detection = 8
+
+Ground truth = 69
+
+RMSE = 0.42 meters
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+6. Location_6 => [-1.5, 0.5, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 33
+
+True detection = 23
+
+False detection = 7
+
+Ground truth = 69
+
+RMSE = NA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+7. Location_7 => [-1.5, -1, 1]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (CellSense) - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Total detection = 7
+
+True detection = 0
+
+False detection = 7
+
+Ground truth = 69
+
+RMSE = NA
+
+- - - - - - - - - - - - - - - - - - - - - - - - - Evaluation parameters (2D-FFT) - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Total detection = 
+
+True detection = 
+
+False detection = 
+
+Ground truth = 
+
+RMSE = 
+
+= x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x = x =
+
+CellSense (Combined) -
+
+Total detection = 189
+
+True detection = 120
+
+False detection = 60
+
+Ground truth = 483

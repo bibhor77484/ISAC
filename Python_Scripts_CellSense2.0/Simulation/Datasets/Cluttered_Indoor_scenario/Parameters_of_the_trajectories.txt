@@ -1,0 +1,103 @@
+Location_1 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([2, 2, 1]) # Position of the object in the setup
+obj_ori = np.array([0.32, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_2 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([2, 0.5, 1]) # Position of the object in the setup
+obj_ori = np.array([0, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_3 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([2, -0.5, 1]) # Position of the object in the setup
+obj_ori = np.array([-0.21, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_4 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -3, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([2, -1.5, 1]) # Position of the object in the setup
+obj_ori = np.array([-0.25, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_5 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([-1.5, 2, 1]) # Position of the object in the setup
+obj_ori = np.array([-0.31, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_6 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([-1.5, 0.5, 1]) # Position of the object in the setup
+obj_ori = np.array([0, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
+
+
+Location_7 parameters:
+
+rx_locations = np.array([0, 3, 1]) 
+tx_locations = np.array([0, -2, 1])
+
+obj_pos = np.array([10, 10, 1]) # Position of the object away from the setup
+obj_pos_dynamic = np.array([-1.5, -1, 1]) # Position of the object in the setup
+obj_ori = np.array([0.31, 0, 0]) # orientation around [z,y,x]. Rotation is anti-clockwise when looked from the axis direction. E.g. Anti-clockwise when looked from top of z-axis. 
+obj_dim = np.array([0.04, 0.6, 0.8]) # Object dimension
+
+K = 100 # No. of times the simulation will run
+Te = 0.08 # Seconds between successive simulation runs
+v_0 = np.array([0, 0, 0]) # Speed of the object in m/s
