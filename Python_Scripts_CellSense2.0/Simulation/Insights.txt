@@ -7,3 +7,17 @@
 	b. Cramer Rao Bound: This is the minimum possible error variance of the Doppler estimate. It is inversely proportional to the square of the total observation time.
 	c. Doppler ambiguity: Because Doppler is estimated using signal phase in time domain and phase wraps over after every 2*pi interval, this causes Doppler ambiguity, i.e., multiple different Doppler values can provide us the peak in the correlation operation. Larger observation time may result in smaller unambiguous Doppler range and therefore, larger Doppler ambiguity. 
 	For example - If we are using 2 samples for Doppler estimation and they are apart by 'T_obs' time, the Doppler values that can be unambiguously estimated from this setup is [-1/(2*T_obs), 1/(2*T_obs)]. Therefore, larger observation time results in larger Doppler ambiguity.
+	
+	
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 2-tap channel analysis - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+1. Single OFDM symbol based SRS-only and DMRS-only analysis
+	- Both DMRS and SRS based estimation has resolution error in delay domain and therefore, performs bad when the AoA is close to the LoS path (0 degrees) and delay spread is smaller than a certain threshold.
+	- For SRS, the threshold for the delay spread is smaller because of larger bandwidth and as we decrease the bandwidth for DMRS, the threshold for the delay spread keeps increasing. 
+	- A similar threshold can be found in AoA domain as well where below this threshold the errors are large and above it, the errors are very small which basically means that the paths are clearly distinguishable. 
+	- The threshold in AoA domain is similar for both DMRS and SRS and across BW
+	
+2. Multiple OFDM symbol based SRS-only, DMRS-only and SRS+DMRS analysis (Single OFDM symbol is used for AoA and ToF estimation and then using those estimates 4 OFDM symbols are used for Doppler estimation)
+	- Since AoA and ToF estimations are still based on single OFDM symbol, the behavior of AoA and ToF are same as the single OFDM symbol based estimations
+	- Since when AoA and ToF are falling below the threshold, the accuracy gets bad it effects the Doppler estimates as well. 
+	- Also, since AoA and ToF are estimated separately and Doppler is estimated after the paths are estimated/selected, Doppler is not being used for distinguishing the dynamic and static paths. (A Sub-optimal approach)
