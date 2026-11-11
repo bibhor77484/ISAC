@@ -1,0 +1,4 @@
+[submodule "bistatic-mmwave-sensing"]
+	path = bistatic-mmwave-sensing
+	url = git@github.com:wayslab/bistatic-mmwave-sensing.git
+	branch = andrew_sub6_human
